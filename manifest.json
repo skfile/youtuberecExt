@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Trend Analyzer",
+  "description": "This extension analyzes the trending videos on YouTube and displays the results in a graph.",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "host_permissions": [
+      "https://www.youtube.com/*"
+  ]
+}
