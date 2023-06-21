@@ -2,12 +2,19 @@
 <html>
 <head>
     <title>YouTube Trend Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/popup.css">
 </head>
 <body>
-    <button id="scrape" title="Scrape data from YouTube">Scrape Data</button>
-    <button id="analyze" title="Analyze trends">Analyze Trends</button>
-    <button id="delete" title="Delete stored data">Delete Data</button>
+    <div class="container py-3">
+        <h2 class="text-center mb-3">YouTube Trend Analyzer</h2>
+        <!-- <p>Welcome to the YouTube Trend Analyzer. Please use the buttons below to scrape data, analyze trends or delete stored data.</p> -->
+        <div class="row justify-content-around">
+            <button id="scrape" class="btn btn-primary col-sm-3" title="Scrape data from YouTube">Scrape Data</button>
+            <button id="analyze" class="btn btn-success col-sm-3" title="Analyze trends">Analyze Trends</button>
+            <button id="delete" class="btn btn-danger col-sm-3" title="Delete stored data">Delete Data</button>
+        </div>
+    </div>
     <script src="js/popup.js"></script>
 </body>
 </html>
